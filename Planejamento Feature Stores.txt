@@ -1,0 +1,190 @@
+- Métricas de Churn
+
+- [ ] net retention
+- [ ] churn rate
+- [ ] activity churn
+- [ ] mrr churn
+- [ ] churn rate scaled
+- [ ] churn rate multi
+- [ ] mrr churn multi
+- [ ] net retention multi
+
+- Métricas Capítulo 3 do livro
+- [ ] event count nos últimos 28 dias
+- [ ] multi date event count, usando generate series e 7 dias (tem um de cálculo e um de insert)
+- [ ] metric stats over time (avg, max, min...) 
+- [ ] sum metric 
+- [ ] metric coverage
+- [ ] events per day
+- [ ] events per account
+- [ ] account tenure
+- [ ] mrr
+- [ ] unit quantity
+- [ ] discount (se tem, porcentagem no total de subscription com desconto e a média de desconto)
+- [ ] billing period
+
+- Métricas Capítulo 4 do livro
+- [ ] ongoing active periods
+- [ ] active event weekly
+- [ ] churned periods
+- [ ] observation dates
+- [ ] like_per_month
+- [ ] newfriend_per_month
+- [ ] post_per_month
+- [ ] adview_per_month
+- [ ] dislike_per_month
+- [ ] unfriend_per_month
+- [ ] message_per_month
+- [ ] reply_per_month
+- [ ] account_tenure
+- [ ] advance_stage
+- [ ] close_opportunity
+- [ ] search
+- [ ] add_competition
+- [ ] revert_stage
+- [ ] lose_opportunity
+- [ ] meeting_held
+- [ ] schedule_meeting
+- [ ] mrr
+- [ ] opp_close_per_dollar
+- [ ] users_purchased
+- [ ] active_users_per_month
+- [ ] opp_value_per_month
+- [ ] user_utilization
+- [ ] add_contact
+- [ ] edit_contact
+- [ ] add_lead
+- [ ] edit_lead
+- [ ] email_lead
+- [ ] call_lead
+- [ ] unsub_lead
+- [ ] create_list
+- [ ] delete_list
+- [ ] email_list
+- [ ] meetings
+- [ ] edit_meeting
+- [ ] cancel_meeting
+- [ ] quote
+- [ ] create_opportunity
+- [ ] win_opportunity
+- [ ] add_competitor
+- [ ] search_actions
+- [ ] discount
+- [ ] bill_period_months
+- [ ] search_action_per_search
+- [ ] loss_rate
+- [ ] cancel_meeting_rate
+- [ ] deletes_per_email
+- [ ] search_actions_per_dollar_closed
+- [ ] mrr_per_lead_added
+- [ ] mrr_per_dollar_opp_close
+- [ ] mrr_per_active_user
+- [ ] opp_value_lost_per_month
+- [ ] total_opp_value_closed
+- [ ] pcnt_opp_value_lost
+- [ ] opp_value_closed_per_active_user
+
+- Métricas Capítulo 7 do livro
+- [ ] ratio metric
+- [ ] total metric
+- [ ] percent change metric
+- [ ] days since event
+- [ ] scaled events per month
+- [ ] tenure scaled events per month
+- [ ] count active users
+- [ ] ratio metric
+- [ ] **total metric**: like_per_month
+- [ ] **total metric**: newfriend_per_month
+- [ ] **total metric**: post_per_month
+- [ ] **total metric**: adview_per_month
+- [ ] **total metric**: dislike_per_month
+- [ ] **total metric**: unfriend_per_month
+- [ ] **total metric**: message_per_month
+- [ ] **total metric**: reply_per_month
+- [ ] **total metric**: account_tenure
+- [ ] **ratio metric**: adview_per_post
+- [ ] **ratio metric**: reply_per_message
+- [ ] **ratio metric**: like_per_post
+- [ ] **ratio metric**: post_per_message
+- [ ] **ratio metric**: unfriend_per_newfriend
+- [ ] **percent change metric**: dislike_pcnt
+- [ ] **percent change metric**: unfriend_per_newfriend_scaled
+- [ ] **percent change metric**: newfriend_pcnt_chng
+- [ ] **total metric**: days_since_newfriend
+- [ ] **total metric**: unfriend_28day_avg_84day_obs
+- [ ] **total metric**: unfriend_28day_avg_84day_obs_scaled
+- [ ] fat tail scores
+
+
+
+
+
+
+
+________________________________
+
+
+
+
+
+
+
+
+
+**Métricas do Capítulo 3:**
+
+- [ ] `multi_date_event_count_7day`: Contagem de eventos em múltiplas datas com intervalo de 7 dias (cálculo e insert)
+- [ ] `metric_avg_over_time`: Média da métrica ao longo do tempo
+- [ ] `metric_max_over_time`: Máximo da métrica ao longo do tempo
+- [ ] `metric_min_over_time`: Mínimo da métrica ao longo do tempo
+- [ ] `sum_metric`: Soma da métrica
+- [ ] `metric_coverage`: Cobertura da métrica
+- [ ] `has_discount`: Indica se a assinatura tem desconto (booleano)
+- [ ] `discount_percentage_total`: Percentual do total de assinaturas com desconto
+- [ ] `average_discount_percentage`: Média do percentual de desconto
+- [ ] `billing_period`: Período de cobrança (ex: mensal, anual)
+
+**Métricas do Capítulo 4:**
+
+- [ ] `advance_stage_count`: Contagem de avanços de estágio
+- [ ] `close_opportunity_count`: Contagem de oportunidades fechadas
+- [ ] `search_count`: Contagem de buscas realizadas
+- [ ] `add_competition_count`: Contagem de adições de concorrentes
+- [ ] `revert_stage_count`: Contagem de reversões de estágio
+- [ ] `lose_opportunity_count`: Contagem de oportunidades perdidas
+- [ ] `meeting_held_count`: Contagem de reuniões realizadas
+- [ ] `schedule_meeting_count`: Contagem de reuniões agendadas
+- [ ] `opp_close_per_dollar`: Número de oportunidades fechadas por dólar gasto
+- [ ] `user_utilization_rate`: Taxa de utilização do usuário
+- [ ] `add_contact_count`: Contagem de adições de contatos
+- [ ] `edit_contact_count`: Contagem de edições de contatos
+- [ ] `add_lead_count`: Contagem de adições de leads
+- [ ] `edit_lead_count`: Contagem de edições de leads
+- [ ] `email_lead_count`: Contagem de emails enviados para leads
+- [ ] `call_lead_count`: Contagem de chamadas para leads
+- [ ] `unsub_lead_count`: Contagem de cancelamentos de inscrição de leads
+- [ ] `create_list_count`: Contagem de criações de listas
+- [ ] `delete_list_count`: Contagem de deleções de listas
+- [ ] `email_list_count`: Contagem de emails enviados para listas
+- [ ] `meetings_count`: Contagem total de reuniões
+- [ ] `edit_meeting_count`: Contagem de edições de reuniões
+- [ ] `cancel_meeting_count`: Contagem de cancelamentos de reuniões
+- [ ] `quote_count`: Contagem de cotações geradas
+- [ ] `search_action_per_search_ratio`: Média de ações por busca
+- [ ] `search_actions_per_dollar_closed_ratio`: Número de ações de busca por dólar de oportunidade fechada
+- [ ] `mrr_per_active_user`: Receita Mensal Recorrente por usuário ativo
+
+**Métricas do Capítulo 7 (refinando as de razão e percentual):**
+
+- [ ] `adview_per_post_ratio`: Visualizações de anúncio por postagem
+- [ ] `reply_per_message_ratio`: Respostas por mensagem
+- [ ] `like_per_post_ratio`: Curtidas por postagem
+- [ ] `post_per_message_ratio`: Postagens por mensagem
+- [ ] `unfriend_per_newfriend_ratio`: Desamizades por novo amigo
+- [ ] `dislike_percentage_change`: Mudança percentual de descurtidas
+- [ ] `unfriend_per_newfriend_scaled_change`: Mudança percentual escalonada de desamizades por novo amigo
+- [ ] `newfriend_percentage_change`: Mudança percentual de novos amigos
+- [ ] `days_since_newfriend`: Dias desde a última adição de um novo amigo
+- [ ] `scaled_events_per_month`: Contagem de eventos escalonada por mês
+- [ ] `tenure_scaled_events_per_month`: Contagem de eventos escalonada por mês, ponderada pelo tempo de atividade da conta
+- [ ] `count_active_users`: Número de usuários ativos
