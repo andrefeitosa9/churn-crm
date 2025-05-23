@@ -25,7 +25,7 @@ except Exception as e:
     exit(1)
 
 # Caminho da pasta onde estão os scripts
-scripts_path = "./"  # ajuste se precisar
+scripts_path = "D:\\Documentos\\GitHub\\churn-crm\\scripts\\bronze_to_silver"  # ajuste se precisar
 
 # Listar todos os arquivos .sql, ignorando o específico
 scripts = []
